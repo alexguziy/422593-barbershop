@@ -6,7 +6,7 @@
   </head>
   <body>
 
-    <heder class="main-title">
+    <header class="main-title">
        <nav class="main-navigation">
             <a class="main-heder-logo">
                 <img src="/img/index-logo.png" alt="Логотип Барбешопа &quot;Бородинский&quot;" width="371" height="155">
@@ -19,17 +19,17 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
         <ul class="user-navigation">
-            <li><a href="#">Вход</a></li>
+            <li><a class="entrance-link" href="#">Вход</a></li>
         </ul>
        </nav>
-    </heder>
+    </header>
 
     <main class="container">
 
         <h1 class="visually-hidden">Barbershop "Borodinski"</h1>
 
         <section class="features">
-            <h2 class="visually-hidden">Преимущества</h2>
+            <h2>Преимущества</h2>
             <ul class="features-list">
                 <li class="features-item">
                     <h3>Быстро</h3>
@@ -58,7 +58,7 @@
                     <time datetime="2016-01-18">18 января</time>
                 </li>
             </ul>
-            <a class="button news" href="#">Все новости</a>
+            <a class="news-link" href="#">Все новости</a>
         </section>
 
         <section class="gallery">
@@ -66,8 +66,8 @@
             <figure>
                 <a href="#"><img src="/img/gallery-index.jpg" width="286" height="164" alt="Интерьер &quot;Барбершоп&quot;"></a>
             </figure>
-            <span class="button button-gallery button-gallery-forward">Вперед</span>
-            <span class="button button-gallery button-gallery-backward">Назад</span>
+            <span class="button button-gallery button-gallery-forward">Вперед</span><!--временная разметка-->
+            <span class="button button-gallery button-gallery-backward">Назад</span><!--временная разметка-->
         </section>
 
         <section class="contact-information">
@@ -75,63 +75,67 @@
             <ul class="contact-information-list">
                 <li class="contact-information-item">
                     <p>Барбершоп «Бородинский»<br>
-                адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8 телефон:<br>
-                +7 (495) 666-02-66</p>
+                       адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8 телефон:<br>
+                       +7 (495) 666-02-66
+                    </p>
                 </li>
                 <li class="contact-information-item">
                     <p>Время работы:<br>
-                пн—пт: с 10:00 до 22:00<br>
-                сб—вс: с 10:00 до 19:00</p>
+                       пн—пт: с 10:00 до 22:00<br>
+                       сб—вс: с 10:00 до 19:00
+                    </p>
                 </li>
                 </ul>
-            <a class="button button-contact-information" href="map.html">Как проехать</a>
-            <a class="button button-contact-information" href="contacts.html">Обратная связь</a>
+            <a class="contact-information map-link" href="map.html">Как проехать</a>
+            <a class="contact-information contacts-link" href="contacts.html">Обратная связь</a>
         </section>
 
         <section class="booking">
         <h2>Записаться</h2>
-        <p class="booking-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
         <form class="booking-form" action="#" method="post">
             <p class="booking-item">
-               Дата
-                <input type="text" name="booking-date" placeholder="08.10.2017">
+               <label for="booking-date">Дата</label>
+                <input type="text" name="booking-date" id="booking-date" placeholder="08.10.2017">
             </p>
             <p class="booking-item">
-               Время
-                <input type="text" name="booking-time" placeholder="10:00">
+                <label for="booking-time">Время</label>
+                <input type="text" name="booking-time" id="booking-time" placeholder="10:00">
             </p>
             <p class="booking-item">
-               Ваше имя
-                <input type="text" name="booking-name" placeholder="Борода">
+                <label for="booking-name">Ваше имя</label>
+                <input type="text" name="booking-name" id="booking-name" placeholder="Борода">
             </p>
             <p class="booking-item">
-              Телефон
-               <input type="tel" name="booking-phone" placeholder="+7(XXX) XXX XX XX">
+                <label for="booking-phone">Телефон</label>
+               <input type="tel" name="booking-phone" id="booking-phone" placeholder="+7(XXX) XXX XX XX">
             </p>
-            <button class="button" type="submit">Отправить</button>
+            <input class="booking-form-button" type="submit" name="submit-button" value="Отправить">
         </form>
         </section>
+
     </main>
+
     <footer class="main-foter">
         <p class="foter-contacts">
            Барбершоп «Бородинский»<br>
            адрес: г. Санкт-Петербург, ул. Б. Конюшенная,<br>
            д. 19/8<br>
-           <a href="map.html">как нас найти?</a><br>
+           <a class="contacts-map-link" href="map.html">как нас найти?</a><br>
            Телефон: +7 (495) 666-02-66<br>
        </p>
        <div class="footer-social">
           <b>Давайте дружить!</b>
            <ul>
-               <li><a class="cocial-button" href="#">Вконтакте</a></li>
-               <li><a class="cocial-button" href="#">Фейсбук</a></li>
-               <li><a class="cocial-button" href="#">Инстаграмм</a></li>
+               <li><a class="cocial-link" href="#">Вконтакте</a></li>
+               <li><a class="cocial-link" href="#">Фейсбук</a></li>
+               <li><a class="cocial-link" href="#">Инстаграмм</a></li>
            </ul>
        </div>
 
        <p class="foter-developer">
           Разработано:
-          <a class="copywriter" href="#">HTML Academy</a>
+          <a class="copywriter-link" href="#">HTML Academy</a>
        </p>
     </footer>
 
@@ -148,11 +152,11 @@
                     <input type="text" name="login-user-password"  placeholder="Пароль">
                 </p>
                 <p class="login-user-checkbox">
-                    <input class="visually-hidden" type="checkbox" name="personal-account-checkbox">
-                    Запомните меня
+                    <input class="visually-hidden-checkbox" type="checkbox" id="personal-account-checkbox" name="personal-account-checkbox">
+                    <label for="personal-account-checkbox">Запомните меня</label>
                 </p>
-                <a class="login-reminder" href="#">Забыли пароль!</a>
-                <button class="button" type="submit">Войти</button>
+                <a class="login-reminder-link" href="#">Забыли пароль!</a>
+                <input class="button-entrance entrance-personal-account" type="submit" name="personal-account-entrance" value="Войти">
                 <span class="modal-close">X</span>
         </form>
     </section>

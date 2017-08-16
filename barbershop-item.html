@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="/css/style.css" rel="stylesheet">
   </head>
-<body>
+    <body>
 
         <header class="main-header">
            <nav class="main-navigation">
@@ -24,29 +25,33 @@
            </nav>
         </header>
 
-    <main class="container">
-
-            <ul class="breadcrumbs">
-                <li><a href="barbershop-index.html">Главная</a></li>
-                <li><a href="#">Магазин</a></li>
-                <li><a href="#">Средства для ухода</a></li>
-                <li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>
-            </ul>
+        <main class="container">
+            <h1 class="title-main-item visuallyhidden">Презентация товара</h1>
+            <header class="container-header">
+                <h2 class="visuallyhidden">Навигация по странице»</h2>
+                    <ul class="breadcrumbs">
+                        <li><a href="barbershop-index.html">Главная</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="#">Средства для ухода</a></li>
+                        <li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>
+                </ul>
+            </header>
 
             <section class="presentation-gallery">
-              <h1 class="visually-hidden">Презентация товара</h1>
                 <p>
-                    <img src="/img/barbershop-item-gal_1.jpg" alt="Богатый ассортимент" width="498" height="460">
+                    <img src="/img/product-item-ferst.jpg" alt="Богатый ассортимент" width="498" height="460">
                 </p>
                 <ul>
-                    <li><img src="/img/barbershop-item-gal_2.jpg" alt="Эргономичная упаковка в профиль" width="149" height="140"></li>
-                    <li><img src="/img/barbershop-item-gal_3.jpg" alt="Эргономичная упаковка" width="149" height="140"></li>
-                    <li><img src="/img/barbershop-item-gal_4.jpg" alt="Богатый ассортимент" width="149" height="140"></li>
+                    <li><img src="/img/product-item-second.jpg" alt="Эргономичная упаковка в профиль" width="149" height="140"></li>
+                    <li><img src="/img/product-item-third.jpg" alt="Эргономичная упаковка" width="149" height="140"></li>
+                    <li><img src="/img/product-item-fourth.jpg" alt="Богатый ассортимент" width="149" height="140"></li>
                 </ul>
+
+
             </section>
 
             <section class="presentation-product">
-              <h2 class="visually-hidden">Описание товара</h2>
+              <h2 class="visuallyhidden">Описание товара</h2>
                 <p class="product-availability">Есть в наличии</p>
                 <p class="product-article">Артикул: dexter-ae</p>
                 <p class="product-description">
@@ -57,7 +62,7 @@
             </section>
 
             <section class="picking">
-               <h2>В набор входят:</h2>
+               <h3>В набор входят:</h3>
                 <ul class="picking-list">
                     <li>Средство для умывания (50 мл)</li>
                     <li>Увлажняющий крем (50 мл)</li>
@@ -66,7 +71,9 @@
                     <li>шампунь (50 мл)</li>
                     <li>Удобная кожаная косметичка</li>
                 </ul>
+
             </section>
+
 
             <footer class="main-foter">
                 <p class="foter-contacts">
@@ -79,9 +86,9 @@
                <div class="footer-social">
                   <b>Давайте дружить!</b>
                    <ul>
-                       <li><a class="cocial-link" href="#">Вконтакте</a></li>
-                       <li><a class="cocial-link" href="#">Фейсбук</a></li>
-                       <li><a class="cocial-link" href="#">Инстаграмм</a></li>
+                       <li><a class="cocial-button" href="#">Вконтакте</a></li>
+                       <li><a class="cocial-button" href="#">Фейсбук</a></li>
+                       <li><a class="cocial-button" href="#">Инстаграмм</a></li>
                    </ul>
                </div>
 
@@ -90,5 +97,30 @@
               <a class="copywriter" href="#">HTML Academy</a>
                </p>
             </footer>
-    </main>
-</body>
+
+             <section class="modal modal-login">
+        <form class="personal-account" action="#" method="post">
+            <h2>Личный кабинет</h2>
+                <p class="login-list">
+                    Введите, пожалуйста, свой логин и пароль
+                </p>
+                <p class="login-user-info">
+                    <input type="text" name="login-user-info" placeholder="Логин">
+                </p>
+                <p class="login-user-password">
+                    <input type="text" name="login-user-password"  placeholder="Пароль">
+                </p>
+                <p class="login-user-checkbox">
+                    <input class="visuallyhidden" type="checkbox" name="personal-account-checkbox">
+                    Запомните меня
+                </p>
+                <a class="login-reminder" href="#">Забыли пароль!</a>
+                <button class="button" type="submit">Войти</button>
+                <span class="modal-close">X</span>
+        </form>
+    </section>
+
+        </main>
+
+
+    </body>

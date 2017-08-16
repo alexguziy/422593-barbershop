@@ -1,0 +1,66 @@
+body{
+    font-family: "PTSans", sans-serif;
+    font-size: 14px;
+    color: #333333;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+
+.title-main,
+.title-main-item{
+    font-family: "PTSans", sans-serif;
+    font-size: 40px;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 42px;
+}
+
+.title-main-price,
+.title-main-shop {
+    font-family: "PTSans", sans-serif;
+    font-size: 30px;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 42px;
+}
+
+.title {
+    font-family: "PTSans", sans-serif;
+    font-size: 30px;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 42px;
+}
+
+.subtitle-features {
+   font-family: "PTSans", sans-serif;
+    font-size: 30px;
+    color: #1319bc;/*временная замена цвета №f7f4f1*/
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 42px;
+}
+
+.title-features-price{
+    font-family: "PTSans", sans-serif;
+    font-size: 24px;
+    color: #333333;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+
+.filters-title,
+.title-picking {
+    font-family: "PTSans", sans-serif;
+    font-size: 24px;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 30px;
+}

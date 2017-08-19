@@ -3,32 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
   </head>
     <body>
-        <h1 class="title-main visuallyhidden">Презентация товара</h1>
 
-        <nav class="main-navigation">
-                <a class="main-heder-logo" href="barbershop-index.html">
-                    <img src="/img/logo.png" alt="Логотип Барбешопа &quot;Бородинский&quot;" width="111" height="24">
+        <header class="main-header">
+           <nav class="main-navigation">
+                <a class="main-heder-logo">
+                    <img src="img/logo.png" alt="Логотип Барбешопа &quot;Бородинский&quot;" width="111" height="24">
                 </a>
                 <ul class="site-navigation">
-                    <li><a href="#">Информация</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="/barbershop-price.html">Прайс-лист</a></li>
-                    <li><a href="#">Магазин</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="info.html">Информация</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="price.html">Прайс-лист</a></li>
+                    <li><a href="catalog.html">Магазин</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
                 </ul>
             <ul class="user-navigation">
-                <li><a href="#">Вход</a></li>
+                <li><a class="login-link" href="login.html">Вход</a></li>
             </ul>
-        </nav>
-
+           </nav>
+        </header>
 
         <main class="container">
 
             <header class="container-header">
-                <h2 class="title visuallyhidden">Навигация по странице»</h2>
+                <h2 class="visually-hidden">Навигация по странице»</h2>
                     <ul class="breadcrumbs">
                         <li><a href="barbershop-index.html">Главная</a></li>
                         <li><a href="#">Магазин</a></li>
@@ -38,20 +39,21 @@
             </header>
 
             <section class="presentation-gallery">
+              <h1 class="visually-hidden">Презентация товара</h1>
                 <p>
-                    <img src="/img/product-item-ferst.jpg" alt="Богатый ассортимент" width="498" height="460">
+                    <img src="img/barbershop-item-gal_1.jpg" alt="Богатый ассортимент" width="498" height="460">
                 </p>
                 <ul>
-                    <li><img src="/img/product-item-second.jpg" alt="Эргономичная упаковка в профиль" width="149" height="140"></li>
-                    <li><img src="/img/product-item-third.jpg" alt="Эргономичная упаковка" width="149" height="140"></li>
-                    <li><img src="/img/product-item-fourth.jpg" alt="Богатый ассортимент" width="149" height="140"></li>
+                    <li><img src="img/barbershop-item-gal_2.jpg" alt="Эргономичная упаковка в профиль" width="149" height="140"></li>
+                    <li><img src="img/barbershop-item-gal_3.jpg" alt="Эргономичная упаковка" width="149" height="140"></li>
+                    <li><img src="img/barbershop-item-gal_4.jpg" alt="Богатый ассортимент" width="149" height="140"></li>
                 </ul>
 
 
             </section>
 
             <section class="presentation-product">
-              <h2 class="title visuallyhidden">Описание товара</h2>
+              <h2 class="visually-hidden">Описание товара</h2>
                 <p class="product-availability">Есть в наличии</p>
                 <p class="product-article">Артикул: dexter-ae</p>
                 <p class="product-description">
@@ -62,7 +64,7 @@
             </section>
 
             <section class="picking">
-               <h2 class="title-picking">В набор входят:</h2>
+               <h3>В набор входят:</h3>
                 <ul class="picking-list">
                     <li>Средство для умывания (50 мл)</li>
                     <li>Увлажняющий крем (50 мл)</li>
@@ -100,23 +102,25 @@
 
              <section class="modal modal-login">
         <form class="personal-account" action="#" method="post">
-            <h2 class="title">Личный кабинет</h2>
+            <h2>Личный кабинет</h2>
                 <p class="login-list">
                     Введите, пожалуйста, свой логин и пароль
                 </p>
                 <p class="login-user-info">
-                    <input type="text" name="login-user-info" placeholder="Логин">
+                   <label for="login-info">Логин</label>
+                    <input type="text" name="login-info" id="login-info" placeholder="Логин">
                 </p>
                 <p class="login-user-password">
-                    <input type="text" name="login-user-password"  placeholder="Пароль">
+                   <label for="login-password">Пароль</label>
+                    <input type="text" name="login-password" id="login-password" placeholder="Пароль">
                 </p>
                 <p class="login-user-checkbox">
-                    <input class="visuallyhidden" type="checkbox" name="personal-account-checkbox">
-                    Запомните меня
+                    <input class="visually-hidden" type="checkbox" name="personal-account-checkbox" id="personal-account-checkbox">
+                    <label for="personal-account-checkbox">Запомните меня</label>
                 </p>
                 <a class="login-reminder" href="#">Забыли пароль!</a>
-                <button class="button" type="submit">Войти</button>
-                <span class="modal-close">X</span>
+                <button class="button" type="button">Войти</button>
+            <button class="modal-close">Закрыть</button>
         </form>
     </section>
 
